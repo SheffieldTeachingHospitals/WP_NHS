@@ -1,0 +1,133 @@
+// PAGE HEADER
+
+.entry-title {
+  
+}
+
+// Media object styles in pages
+
+.media-body {
+  
+  h3 {
+    
+    margin-top: 0px;
+    
+  }
+  
+}
+
+// BREADCRUMBS
+
+.breadcrumb-container {
+  
+  
+}
+
+.breadcrumb {
+  
+
+  
+}
+
+
+// CATEGORY.PHP
+
+.category-title {
+
+  // padding-top: 20px;
+  margin-top: 0;
+  
+}
+
+.category-article {
+  
+  margin: 1em 0;
+  padding-right: 5px;
+  
+  img {
+    
+    
+    
+  }
+  
+  // REMOVE ENTRY FOOTER BORDER IN CATEGORY CARD
+  
+  .entry-footer {
+    
+    border: none;
+    padding: 0;
+    margin: 0;
+    
+    .entry-meta {
+    
+      font-size: 12px;
+
+    }
+    
+  }
+  
+}
+
+// ENTRY FOOTER
+
+.entry-footer {
+  
+  // border-top: 1px solid darken( $brand-gray, 5% );
+  border-top: none;
+  // padding-top: 1em;
+  // margin-top: 1em;
+  
+}
+
+// BLOCKQUOTE
+
+blockquote {
+  
+  border-color: $brand-primary;
+  background-color: $brand-gray;
+  
+}
+
+//
+
+.card-marketing {
+  
+  padding: 0.5em;
+  
+}
+
+.card-footer {
+  
+  // background-color: $brand-info-dark;
+  margin-bottom: 1.5em;
+  
+}
+
+.page-cta {
+  
+  h3 {
+    
+    margin-bottom: 1.5em;
+    
+  }
+  
+}
+
+.page-category-post-list {
+  
+  text-align: center;
+  
+  h2 {
+
+    margin-bottom: 1.5em;
+    
+  }
+  
+  .page-category-card-inner {
+    
+    a {
+      color: inherit;
+    }
+  }
+  
+}

@@ -1,0 +1,114 @@
+.jumbotron {
+  
+  margin-top: -2em;
+  background-repeat: no-repeat;
+  // background-position: 32% 0%;
+  background-size: cover;
+  color: white;
+  
+  h1 {
+    
+    font-weight: 400;
+    // background-color: $brand-info;
+    padding-left: 5px;
+    color: white; // $brand-warning;
+    
+  }
+  
+  .jumbotron-sidebar {
+    
+    padding: 3em 1em;
+    
+  }
+  
+}
+
+.img-marketing {
+  
+  width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+  
+}
+
+.page-category-card {
+  
+  padding: 1em;
+  
+}
+
+.home {
+  
+  h2 {
+    
+    font-size: floor(($font-size-base * 2.5));;
+    text-align: center;
+    margin-bottom: 1em;
+    
+  }
+  
+}
+
+// Front page grey box for meet the team featured posts
+
+.page-category-post-list {
+  
+  margin-bottom: -3em;
+  background-color: $brand-grey;
+  padding: 2em 1em;
+  
+  .page-category-card {
+    
+    padding: 0.5em;
+    background-color: darken($brand-grey, 5%);
+    margin-bottom: 1em;
+    
+    img {
+      
+      margin-bottom: 1em;
+      
+    }
+    
+    p {
+      
+      text-align: center;
+      
+    }
+    
+    
+    
+  }
+  
+  .page-category-card .category-title {
+  
+    margin-top: 0.5em;
+    text-align: center;
+    
+    a {
+      
+      color: inherit;
+      text-decoration: underline;
+      
+    }
+  
+  }
+  
+  .page-category-footer {
+  
+    text-align: center;
+    padding: 1em 0;
+    
+    a {
+      
+      color: inherit;
+      text-decoration: underline;
+      font-size: 1.3em;
+      font-weight: 700;
+      
+    }
+
+  }
+  
+}
+
+//
