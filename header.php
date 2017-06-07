@@ -20,7 +20,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Assistant:400,700" rel="stylesheet">
 <?php wp_head(); ?>
   		<!-- IE8 fallback moved below head to work properly. Added respond as well. Tested to work. -->
 			<!-- media-queries.js (fallback) -->
@@ -55,15 +55,13 @@
       <div id="site-header">
         <div class="container">
           <div class="row">
-            <div class="col-md-7">
-              <a class="navbar-brand hidden-xs" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>">
-                <img class="" width="250" src="<?php echo get_template_directory_uri() . "/images/proud-five-logos-white.png"; ?>">
-              </a>
+            <div class="col-md-8 col-xs-6">
+              
               
             </div>
-            <div class="col-md-5">
+            <div class="col-md-4 col-xs-6">
               <a title="Sheffield Teaching Hospitals NHS Foundation Trust main website" target="_blank" href="http://www.sth.nhs.uk/">
-                <img class="navbar-brand img-logo img-responsive" src="<?php echo get_template_directory_uri() . "/images/STHFT_white_transparent.png"; ?>">
+                <img class="img-logo img-responsive" src="<?php echo get_template_directory_uri() . "/images/sth_logo_blue_tight.png"; ?>">
               </a>
             </div>
           </div>
@@ -84,7 +82,7 @@
             </div>
 
             <div class="collapse navbar-collapse navbar-responsive-collapse">
-                  <?php wp_bootstrap_main_nav(); ?>
+              <?php wp_bootstrap_main_nav(); ?>
             </div>
           </div>
 
