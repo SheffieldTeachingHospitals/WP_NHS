@@ -3,3 +3,26 @@
   margin-top: 2.5em;
   
 }
+
+.sidebar { 
+  
+  h3 {
+    
+    font-size: $font-size-h3 - 9;
+    border-bottom: 1px solid;
+    line-height: 2;
+    margin-top: 5px;
+    
+  }
+  
+  h4 {
+    
+    font-size: $font-size-h4 - 4;
+  }
+  
+  .widget {
+    
+    margin-bottom: 2em;
+  }
+  
+}
