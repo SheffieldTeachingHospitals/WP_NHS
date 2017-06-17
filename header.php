@@ -56,7 +56,15 @@
         <div class="container">
           <div class="row">
             <div class="col-md-8 col-xs-6">
-              
+              <?php 
+
+              $left_theme_logo = get_field('left_logo', 'option');
+
+              if( !empty($left_theme_logo) ): ?>
+
+                <img src="<?php echo $left_theme_logo['url']; ?>" alt="<?php echo $left_theme_logo['alt']; ?>" />
+
+              <?php endif; ?>
               
             </div>
             <div class="col-md-4 col-xs-6">

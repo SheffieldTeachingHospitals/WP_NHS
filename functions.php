@@ -302,6 +302,12 @@ remove_action( 'admin_print_styles', 'print_emoji_styles' );
 add_image_size( 'marketing-cropped', 400, 300, true );
 
 
+// Theme options page from ACF
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}
 
 
 /**
