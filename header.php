@@ -55,22 +55,24 @@
       <div id="site-header">
         <div class="container">
           <div class="row">
-            <div class="col-md-8 col-xs-6">
+            <div class="col-md-4 col-xs-6">
               <?php 
-
               $left_theme_logo = get_field('left_logo', 'option');
-
               if( !empty($left_theme_logo) ): ?>
 
-                <img src="<?php echo $left_theme_logo['url']; ?>" alt="<?php echo $left_theme_logo['alt']; ?>" />
+                <img class="img-logo img-responsive" src="<?php echo $left_theme_logo['url']; ?>" alt="<?php echo $left_theme_logo['alt']; ?>" />
 
               <?php endif; ?>
               
             </div>
-            <div class="col-md-4 col-xs-6">
-              <a title="Sheffield Teaching Hospitals NHS Foundation Trust main website" target="_blank" href="http://www.sth.nhs.uk/">
-                <img class="img-logo img-responsive" src="<?php echo get_template_directory_uri() . "/images/sth_logo_blue_tight.png"; ?>">
-              </a>
+            <div class="col-md-4 col-md-offset-4 col-xs-6">
+              <?php 
+              $right_theme_logo = get_field('right_logo', 'option');
+              if( !empty($right_theme_logo) ): ?>
+
+                <img class="img-logo img-responsive" src="<?php echo $right_theme_logo['url']; ?>" alt="<?php echo $right_theme_logo['alt']; ?>" />
+
+              <?php endif; ?>
             </div>
           </div>
         </div>
