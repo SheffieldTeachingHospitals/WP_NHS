@@ -236,11 +236,12 @@ add_action( 'widgets_init', 'sth_register_footer' );
 /**
  * Enqueue scripts and styles.
  */
-function sth_scripts() {
+if( !function_exists( "sth_scripts" ) ) { function sth_scripts() {
   
 	wp_enqueue_style( 'sth-style', get_stylesheet_uri() );
 
 }
+                                         }
 add_action( 'wp_enqueue_scripts', 'sth_scripts' );
 
 
