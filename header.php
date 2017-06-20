@@ -40,7 +40,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-  
+
   <nav class="navbar navbar-default navbar-topbar hidden-xs">
     <div class="container">
       <div class="row">
@@ -60,7 +60,7 @@
               $left_theme_logo = get_field('left_logo', 'option');
               if( !empty($left_theme_logo) ): ?>
 
-                <img class="img-logo img-responsive" src="<?php echo $left_theme_logo['url']; ?>" alt="<?php echo $left_theme_logo['alt']; ?>" />
+                <img class="img-logo img-responsive" title="<?php echo $left_theme_logo['title']; ?>" src="<?php echo $left_theme_logo['url']; ?>" alt="<?php echo $left_theme_logo['alt']; ?>" />
 
               <?php endif; ?>
               
@@ -70,7 +70,7 @@
               $right_theme_logo = get_field('right_logo', 'option');
               if( !empty($right_theme_logo) ): ?>
 
-                <img class="img-logo img-responsive" src="<?php echo $right_theme_logo['url']; ?>" alt="<?php echo $right_theme_logo['alt']; ?>" />
+                <img class="img-logo img-responsive" title="<?php echo $right_theme_logo['title']; ?>" src="<?php echo $right_theme_logo['url']; ?>" alt="<?php echo $right_theme_logo['alt']; ?>" />
 
               <?php endif; ?>
             </div>
@@ -100,7 +100,6 @@
 			</nav> <!-- end .navbar -->
 		
 		</header> <!-- end header -->
-  
   
 <div id="page" class="hfeed site">
 	<div id="content" class="site-content">
