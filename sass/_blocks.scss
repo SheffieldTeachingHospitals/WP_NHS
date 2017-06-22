@@ -1,0 +1,50 @@
+.block {
+  
+  display: block;
+  background-color: $brand-grey;
+  font-size: 21px;
+  padding: 0.8em;
+  font-weight: 700;
+  margin-bottom: 2em;
+  
+}
+
+.block-primary {
+  
+  background-color: $brand-primary;
+  color: #FFF;
+  
+}
+
+.block-warning {
+  
+  background-color: $brand-warning;
+  
+}
+
+.block-danger {
+  
+  background-color: $brand-danger;
+  color: #FFF;
+  
+}
+
+.block-info {
+  
+  background-color: $brand-info;
+  color: #FFF;
+  
+}
+
+.block-success {
+  
+  background-color: $brand-success;
+  color: #FFF;
+  
+}
+
+.block-with-headroom {
+  
+  margin-top: 2em;
+  
+}
