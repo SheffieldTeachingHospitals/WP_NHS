@@ -33,6 +33,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?> 
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+        <?php get_template_part( 'template-parts/content', 'parts' ); ?> 
 
 			<?php endwhile; // End of the loop. ?>
 
@@ -45,6 +46,6 @@ get_header(); ?>
 	  </div><!-- #primary -->
 </div>
 
-<?php get_template_part( 'template-parts/content', 'parts' ); ?> 
+<?php get_template_part( 'template-parts/content', 'marketing' ); ?> 
 
 <?php get_footer(); ?>
