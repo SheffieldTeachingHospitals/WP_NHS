@@ -43,10 +43,10 @@
                                                           'orderby'    => 'date',
                                                           'order'      => 'DESC',
                                                         ) );
-                if ( $the_query->have_posts() ) : ?>
+                if ( $featured_cat_feed->have_posts() ) : ?>
 
           <ol class="list-group list-feed-news">
-            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+            <?php while ( $featured_cat_feed->have_posts() ) : $featured_cat_feed->the_post(); ?>
             <li class="list-group-item">
               <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
             </li>
