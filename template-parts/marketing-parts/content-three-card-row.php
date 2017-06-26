@@ -26,11 +26,11 @@ if( $is_published ): ?>
         
         
         
-        <?php $tcr_block_one_url_id = get_sub_field( 'tcr_block_one_link', false, false ); ?>      
+        <?php $tcr_block_one_url_id = get_sub_field( 'tcr_block_one_link' ); ?>      
         <div class="col-md-4">
           <?php if( get_sub_field( 'tcr_block_one_image' ) ): ?>
             <?php if( $tcr_block_one_url_id ): ?>
-              <a href="<?php echo get_the_permalink( $tcr_block_one_url_id ); ?>">
+              <a href="<?php echo $tcr_block_one_url_id['url']; ?>" target="<?php echo $tcr_block_one_url_id['target']; ?>" title="<?php echo $tcr_block_one_url_id['title']; ?>">
             <?php endif; ?>
               <?php echo wp_get_attachment_image( get_sub_field( 'tcr_block_one_image' ), 'full', "", array( "class" => "img-full" ) ) ;?>
             <?php if( $tcr_block_one_url_id ): ?>
@@ -41,7 +41,7 @@ if( $is_published ): ?>
           <div class="block">
             <h3>
               <?php if( $tcr_block_one_url_id ): ?>
-                <a href="<?php echo get_the_permalink( $tcr_block_one_url_id ); ?>">
+                <a href="<?php echo $tcr_block_one_url_id['url']; ?>" target="<?php echo $tcr_block_one_url_id['target']; ?>" title="<?php echo $tcr_block_one_url_id['title']; ?>">
               <?php endif; ?>
                   <?php the_sub_field( 'tcr_block_one_title' );?>
               <?php if( $tcr_block_one_url_id ): ?>
@@ -54,11 +54,11 @@ if( $is_published ): ?>
           </div>
         </div>     
         
-        <?php $tcr_block_two_url_id = get_sub_field( 'tcr_block_two_link', false, false ); ?>   
+        <?php $tcr_block_two_url_id = get_sub_field( 'tcr_block_two_link' ); ?>   
         <div class="col-md-4">
           <?php if( get_sub_field( 'tcr_block_two_image' ) ): ?>
             <?php if( $tcr_block_two_url_id ): ?>
-              <a href="<?php echo get_the_permalink( $tcr_block_two_url_id ); ?>">
+              <a href="<?php echo $tcr_block_two_url_id['url']; ?>" target="<?php echo $tcr_block_two_url_id['target']; ?>" title="<?php echo $tcr_block_two_url_id['title']; ?>">
             <?php endif; ?>
               <?php echo wp_get_attachment_image( get_sub_field( 'tcr_block_two_image' ), 'full', "", array( "class" => "img-full" ) ) ;?>
             <?php if( $tcr_block_two_url_id ): ?>
@@ -69,7 +69,7 @@ if( $is_published ): ?>
           <div class="block">
             <h3>
               <?php if( $tcr_block_two_url_id ): ?>
-                <a href="<?php echo get_the_permalink( $tcr_block_two_url_id ); ?>">
+                <a href="<?php echo $tcr_block_two_url_id['url']; ?>" target="<?php echo $tcr_block_two_url_id['target']; ?>" title="<?php echo $tcr_block_two_url_id['title']; ?>">
               <?php endif; ?>
                   <?php the_sub_field( 'tcr_block_two_title' );?>
               <?php if( $tcr_block_two_url_id ): ?>
@@ -82,11 +82,11 @@ if( $is_published ): ?>
           </div>
         </div>
         
-        <?php $tcr_block_three_url_id = get_sub_field( 'tcr_block_three_link', false, false ); ?>   
+        <?php $tcr_block_three_url_id = get_sub_field( 'tcr_block_three_link' ); ?>   
         <div class="col-md-4">
           <?php if( get_sub_field( 'tcr_block_three_image' ) ): ?>
             <?php if( $tcr_block_three_url_id ): ?>
-              <a href="<?php echo get_the_permalink( $tcr_block_three_url_id ); ?>">
+              <a href="<?php echo $tcr_block_three_url_id['url']; ?>" target="<?php echo $tcr_block_three_url_id['target']; ?>" title="<?php echo $tcr_block_three_url_id['title']; ?>">
             <?php endif; ?>
               <?php echo wp_get_attachment_image( get_sub_field( 'tcr_block_three_image' ), 'full', "", array( "class" => "img-full" ) ) ;?>
             <?php if( $tcr_block_three_url_id ): ?>
@@ -97,7 +97,7 @@ if( $is_published ): ?>
           <div class="block">
             <h3>
               <?php if( $tcr_block_three_url_id ): ?>
-                <a href="<?php echo get_the_permalink( $tcr_block_three_url_id ); ?>">
+                <a href="<?php echo $tcr_block_three_url_id['url']; ?>" target="<?php echo $tcr_block_three_url_id['target']; ?>" title="<?php echo $tcr_block_three_url_id['title']; ?>">
               <?php endif; ?>
                   <?php the_sub_field( 'tcr_block_three_title' );?>
               <?php if( $tcr_block_three_url_id ): ?>
