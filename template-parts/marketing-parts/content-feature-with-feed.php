@@ -5,6 +5,8 @@
 // 
 // Title, Featured Image, Featured Item, Category Feed
 // 
+// Feed defaults to ten post items if undefined
+// 
 /////////////////
 ;?>
 <section class="featured">
@@ -55,7 +57,17 @@
           <?php wp_reset_postdata(); ?>
 
           <?php else : ?>
-          <!-- no output -->
+        
+          <ul class="list-group list-feed-news">
+          <?php
+            $recent_posts = wp_get_recent_posts();
+            foreach( $recent_posts as $recent ){
+              echo '<li class="list-group-item"><a rel="bookmark" href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
+            }
+            wp_reset_query();
+          ?>
+          </ul>
+        
           <?php endif; ?>
         <?php endif; ?>
       </div>
