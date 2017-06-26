@@ -12,9 +12,9 @@ if( have_rows('marketing_parts') ):
 
         	get_template_part( 'template-parts/marketing-parts/content', 'feature-with-feed' );
 
-        elseif( get_row_layout() == 'download' ): 
+        elseif( get_row_layout() == 'three_card_row' ): 
 
-        	//
+        	get_template_part( 'template-parts/marketing-parts/content', 'three-card-row' );
 
         endif;
 

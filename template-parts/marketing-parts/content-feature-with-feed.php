@@ -5,10 +5,14 @@
 // 
 // Title, Featured Image, Featured Item, Category Feed
 // 
+// Prefix: ff
+// 
 // Feed defaults to ten post items if undefined
 // 
 /////////////////
-;?>
+$is_published = get_sub_field( 'ff_published' );
+if( $is_published ): ?>
+
 <section class="featured">
   <div class="container">
     <div class="row">
@@ -75,3 +79,4 @@
     </div>
   </div>
 </section>
+<?php endif; ?>
