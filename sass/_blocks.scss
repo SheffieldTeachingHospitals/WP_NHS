@@ -2,10 +2,45 @@
   
   display: block;
   background-color: $brand-grey;
-  font-size: 21px;
+  font-size: 18px;
   padding: 0.8em;
   font-weight: 700;
   margin-bottom: 2em;
+  
+  p {
+    
+    font-weight: 400;
+    
+  }
+  
+  h2, h3, h4, h5  {
+    
+    margin-top: 5px;
+    color: inherit;
+    font-size: 30px;
+  }
+  
+  h3 {
+    
+    font-size: 25px;
+  }
+  
+  h4 {
+    
+    font-size: 20px;
+  }
+  
+  h5 {
+    
+    font-size: 18px;
+  }
+  
+  .cta {
+    
+    font-size: 50px;
+    color: $brand-secondary;
+    
+  }
   
 }
 
@@ -14,11 +49,71 @@
   background-color: $brand-primary;
   color: #FFF;
   
+  h2, h3, h4, h5 {
+    
+    color: $btn-primary-color;
+  }
+  
+  a {
+    
+    color: $btn-primary-color;
+    text-decoration: underline;
+    
+    &:hover {
+      
+      color: darken( $btn-primary-color, 15% );
+      
+    }
+  }
+  
+  
+}
+
+.block-secondary {
+  
+  background-color: $brand-secondary;
+  color: #FFF;
+  
+  h2, h3, h4, h5 {
+    
+    color: $btn-primary-color;
+  }
+  
+  a {
+    
+    color: $btn-primary-color;
+    text-decoration: underline;
+    
+    &:hover {
+      
+      color: darken( $btn-primary-color, 15% );
+      
+    }
+  }
+  
+  
 }
 
 .block-warning {
   
   background-color: $brand-warning;
+  
+  h2, h3, h4, h5  {
+    
+    color: $btn-warning-color;
+  }
+  
+  a {
+    
+    color: $btn-warning-color;
+    text-decoration: underline;
+    
+    &:hover {
+      
+      color: darken( $btn-warning-color, 15% );
+      
+    }
+  }
   
 }
 
@@ -27,12 +122,46 @@
   background-color: $brand-danger;
   color: #FFF;
   
+  h2, h3, h4, h5  {
+    
+    color: $btn-danger-color;
+  }
+  
+  a {
+    
+    color: $btn-danger-color;
+    text-decoration: underline;
+    
+    &:hover {
+      
+      color: darken( $btn-danger-color, 15% );
+      
+    }
+  }
+  
 }
 
 .block-info {
   
   background-color: $brand-info;
   color: #FFF;
+  
+  h2, h3, h4, h5  {
+    
+    color: $btn-info-color;
+  }
+  
+  a {
+    
+    color: $btn-info-color;
+    text-decoration: underline;
+    
+    &:hover {
+      
+      color: darken( $btn-info-color, 15% );
+      
+    }
+  }
   
 }
 
@@ -41,10 +170,49 @@
   background-color: $brand-success;
   color: #FFF;
   
+  h2, h3, h4, h5  {
+    
+    color: $btn-success-color;
+  }
+  
+  a {
+    
+    color: $btn-success-color;
+    text-decoration: underline;
+    
+    &:hover {
+      
+      color: darken( $btn-success-color, 15% );
+      
+    }
+  }
+  
 }
 
 .block-with-headroom {
   
   margin-top: 2em;
   
+}
+
+.block-on-top {
+  
+  margin-bottom: 0;
+  
+}
+
+.block-text-center {
+  
+  text-align: center;
+  
+}
+
+.block-with-image {
+  
+  padding: 0;
+  
+  .block-with-image-inner {
+    
+    padding: 0.8em;
+  }
 }

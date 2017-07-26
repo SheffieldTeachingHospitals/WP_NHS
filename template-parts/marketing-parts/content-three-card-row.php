@@ -21,9 +21,9 @@ if( $is_published ): ?>
       <?php endif;?>
       
       <?php if( have_rows( 'tcr_card_row' ) ): ?>
-      <div class="row">
+     <div class="col-md-12">
         <?php while( have_rows( 'tcr_card_row' ) ) : the_row(); ?>
-        
+       <div class="row">  
         
         
         <?php $tcr_block_one_url_id = get_sub_field( 'tcr_block_one_link' ); ?>      
@@ -48,7 +48,7 @@ if( $is_published ): ?>
                 </a>
               <?php endif; ?>
             </h3>
-            <?php if( get_sub_field( 'tcr_block_one_text' ): ?>
+            <?php if( get_sub_field( 'tcr_block_one_text' ) ): ?>
               <?php the_sub_field( 'tcr_block_one_text' );?>
             <?php endif; ?>
           </div>
@@ -76,7 +76,7 @@ if( $is_published ): ?>
                 </a>
               <?php endif; ?>
             </h3>
-            <?php if( get_sub_field( 'tcr_block_two_text' ): ?>
+            <?php if( get_sub_field( 'tcr_block_two_text' ) ): ?>
               <?php the_sub_field( 'tcr_block_two_text' );?>
             <?php endif; ?>
           </div>
@@ -104,13 +104,12 @@ if( $is_published ): ?>
                 </a>
               <?php endif; ?>
             </h3>
-            <?php if( get_sub_field( 'tcr_block_three_text' ): ?>
+            <?php if( get_sub_field( 'tcr_block_three_text' ) ): ?>
               <?php the_sub_field( 'tcr_block_three_text' );?>
             <?php endif; ?>
           </div>
         </div>
-      
-
+      </div>
         <?php endwhile; ?>
       </div>
       <?php endif; ?>
