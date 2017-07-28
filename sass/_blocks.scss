@@ -214,5 +214,12 @@
   .block-with-image-inner {
     
     padding: 0.8em;
+    
+    h1, h2 {
+      
+      font-size: $font-size-h1;
+      
+    }
+    
   }
 }

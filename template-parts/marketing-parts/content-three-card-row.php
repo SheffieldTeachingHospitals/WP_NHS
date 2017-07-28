@@ -3,7 +3,7 @@
 //
 // Three card row
 // 
-// Title, Featured Image, URL, WYSIWYG x3 repeater
+// Title, Featured Image, URL, WYSIWYG, block style/type x3 repeater
 // 
 // Prefix: tcr
 // 
@@ -38,7 +38,9 @@ if( $is_published ): ?>
             <?php endif; ?>
           <?php endif;?>
           
-          <div class="block">
+          
+          
+          <div class="block block-<?php if( get_sub_field( 'tcr_block_one_block_type' ) ):?><?php the_sub_field( 'tcr_block_one_block_type' );?><?php endif; ?>">
             <h3>
               <?php if( $tcr_block_one_url_id ): ?>
                 <a href="<?php echo $tcr_block_one_url_id['url']; ?>" target="<?php echo $tcr_block_one_url_id['target']; ?>" title="<?php echo $tcr_block_one_url_id['title']; ?>">

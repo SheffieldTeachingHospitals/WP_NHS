@@ -13,7 +13,7 @@
 $is_published = get_sub_field( 'ff_published' );
 if( $is_published ): ?>
 
-<section class="featured">
+<section class="featured-feed">
   <div class="container">
     <div class="row">
       <?php if( get_sub_field( 'ff_section_title' ) ): ?>
