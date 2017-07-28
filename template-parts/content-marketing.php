@@ -20,6 +20,10 @@ if( have_rows('marketing_parts') ):
 
         	get_template_part( 'template-parts/marketing-parts/content', 'feature-picture-card' );
 
+        elseif( get_row_layout() == 'category_feed_cards' ): 
+
+        	get_template_part( 'template-parts/marketing-parts/content', 'category-feed-cards' );
+
         endif;
 
     endwhile;
