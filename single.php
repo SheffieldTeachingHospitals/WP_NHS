@@ -41,4 +41,5 @@ get_header(); ?>
     </div>
 	</div><!-- #primary-->
 
+<?php get_template_part( 'template-parts/content', 'marketing' ); ?> 
 <?php get_footer(); ?>
