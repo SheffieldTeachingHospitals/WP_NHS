@@ -16,6 +16,10 @@ if( have_rows('page_parts') ):
 
         	get_template_part( 'template-parts/page-parts/content', 'quote-card' );
 
+        elseif( get_row_layout() == 'featured_image' ): 
+
+        	get_template_part( 'template-parts/page-parts/content', 'featured-image' );
+
         endif;
 
     endwhile;

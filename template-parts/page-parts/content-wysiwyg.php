@@ -8,7 +8,7 @@
 /////////////////
 $is_published = get_sub_field( 'wb_published' );
 if( $is_published ): ?>
-<section class="writing-block">
+<section class="writing-block page-part">
   <div class="row">
 
     <?php if( get_sub_field( 'wb_title' ) ): ?>
