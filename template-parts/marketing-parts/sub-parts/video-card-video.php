@@ -9,8 +9,8 @@
 // 
 /////////////////
 ?>
-<div class="col-md-8">
-  <div class="embed-responsive embed-responsive-16by9">
+<div class="col-md-7">
+  <div class="embed-responsive embed-responsive-4by3">
     <?php the_sub_field('vc_video'); ?>
   </div>
 </div>

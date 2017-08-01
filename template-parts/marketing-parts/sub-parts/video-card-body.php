@@ -11,7 +11,7 @@
 $vc_button = get_sub_field('vc_button', false, false);
 $vc_button_two = get_sub_field('vc_button_second', false, false);
 ?>
-<div class="col-md-4">
+<div class="col-md-3">
   <div class="block-with-video-inner">
     <header>
       
