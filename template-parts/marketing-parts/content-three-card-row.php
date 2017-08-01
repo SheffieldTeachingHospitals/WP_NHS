@@ -68,7 +68,7 @@ if( $is_published ): ?>
             <?php endif; ?>
           <?php endif;?>
           
-          <div class="block">
+          <div class="block block-<?php if( get_sub_field( 'tcr_block_two_block_type' ) ):?><?php the_sub_field( 'tcr_block_two_block_type' );?><?php endif; ?>">
             <h3>
               <?php if( $tcr_block_two_url_id ): ?>
                 <a href="<?php echo $tcr_block_two_url_id['url']; ?>" target="<?php echo $tcr_block_two_url_id['target']; ?>" title="<?php echo $tcr_block_two_url_id['title']; ?>">
@@ -96,7 +96,7 @@ if( $is_published ): ?>
             <?php endif; ?>
           <?php endif;?>
           
-          <div class="block">
+          <div class="block block-<?php if( get_sub_field( 'tcr_block_three_block_type' ) ):?><?php the_sub_field( 'tcr_block_three_block_type' );?><?php endif; ?>">
             <h3>
               <?php if( $tcr_block_three_url_id ): ?>
                 <a href="<?php echo $tcr_block_three_url_id['url']; ?>" target="<?php echo $tcr_block_three_url_id['target']; ?>" title="<?php echo $tcr_block_three_url_id['title']; ?>">

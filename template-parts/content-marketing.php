@@ -24,6 +24,10 @@ if( have_rows('marketing_parts') ):
 
         	get_template_part( 'template-parts/marketing-parts/content', 'category-feed-cards' );
 
+        elseif( get_row_layout() == 'jumbotron' ): 
+
+        	get_template_part( 'template-parts/marketing-parts/content', 'jumbotron' );
+
         endif;
 
     endwhile;

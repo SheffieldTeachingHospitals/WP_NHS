@@ -3,7 +3,7 @@
 //
 // Featured Image
 // 
-// Quote, source
+// Image, link
 // 
 // Namespace: fi_
 // 
