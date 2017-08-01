@@ -36,6 +36,10 @@ if( have_rows('marketing_parts') ):
 
         	get_template_part( 'template-parts/marketing-parts/content', 'full-width' );
 
+        elseif( get_row_layout() == 'banner_image' ): 
+
+        	get_template_part( 'template-parts/marketing-parts/content', 'banner-image' );
+
         endif;
 
     endwhile;
