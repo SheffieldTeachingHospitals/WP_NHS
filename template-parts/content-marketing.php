@@ -32,6 +32,10 @@ if( have_rows('marketing_parts') ):
 
         	get_template_part( 'template-parts/marketing-parts/content', 'video-card' );
 
+        elseif( get_row_layout() == 'full_width_content' ): 
+
+        	get_template_part( 'template-parts/marketing-parts/content', 'full-width' );
+
         endif;
 
     endwhile;
