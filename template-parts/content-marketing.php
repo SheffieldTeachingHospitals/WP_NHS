@@ -28,6 +28,10 @@ if( have_rows('marketing_parts') ):
 
         	get_template_part( 'template-parts/marketing-parts/content', 'jumbotron' );
 
+        elseif( get_row_layout() == 'video_card' ): 
+
+        	get_template_part( 'template-parts/marketing-parts/content', 'video-card' );
+
         endif;
 
     endwhile;

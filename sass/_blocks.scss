@@ -207,11 +207,11 @@
   
 }
 
-.block-with-image {
+.block-with-image, .block-with-video {
   
   padding: 0;
   
-  .block-with-image-inner {
+  .block-with-image-inner, .block-with-video-inner {
     
     padding: 0.8em;
     

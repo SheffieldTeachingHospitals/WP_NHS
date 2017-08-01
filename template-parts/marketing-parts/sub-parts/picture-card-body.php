@@ -13,19 +13,12 @@ $pc_button_two = get_sub_field('pc_button_second', false, false);
 ?>
 <div class="col-md-5">
   <div class="block-with-image-inner">
-    <header>
-      <?php $is_h1 = get_sub_field( 'pc_title_h1' );
-            if( $is_h1 ): ?>
-            <h1>
-          <?php else: ?>
-            <h2>
+    <header>    
+      <?php if( get_sub_field('pc_title_h1') ): ?>
+          <h1><?php the_sub_field('pc_title'); ?></h1>
+        <?php else: ?>
+          <h2><?php the_sub_field('pc_title'); ?></h2>
         <?php endif; ?>
-          <?php the_sub_field( 'pc_title' );?>
-        <?php if( $is_h1 ): ?>
-            </h1>
-              <?php else: ?>
-            </h2>
-      <?php endif; ?>
     </header>
     <?php the_sub_field( 'pc_body' );?>
     
