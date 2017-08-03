@@ -12,14 +12,51 @@ get_header(); ?>
         <div class="col-md-12">
           <header>
             <h1 class="page-title"><?php single_cat_title();?></h1>
-            <?php
-              the_archive_description( '<p class="lead taxonomy-description">', '</p>' );
-            ?>
           </header>
       </div>
       
       <div class="col-md-12">
          <?php sth_breadcrumbs(); ?>
+      </div>
+      
+      <div class="col-md-12">
+        <?php the_archive_description( '<p class="lead taxonomy-description">', '</p>' );?>
+        
+        <?php /*
+        *  Loop through post objects to get featured posts
+        *  Using this method, you can use all the normal WP functions as the $post object is temporarily initialized within the loop
+        *  Read more: http://codex.wordpress.org/Template_Tags/get_posts#Reset_after_Postlists_with_offset
+        */
+        // get the category ID then combine it with a string so that it can be injected into the get_field stuff... taxonomies need this!
+        $category = get_category( get_query_var( 'cat' ) );
+        $cat_id = 'category_' . $category->cat_ID;
+
+        $is_published = get_field( 'cat_published', $cat_id );
+        $post_objects = get_field( 'cat_cards', $cat_id );
+        if( $is_published ): ?>
+          <?php if( $post_objects ): ?>
+              <div class="row">
+              <?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
+                  <?php setup_postdata($post); ?>
+                  <article class="col-md-4">
+              
+                    <?php if ( has_post_thumbnail($post->ID) ):?>
+                      <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                        <?php echo get_the_post_thumbnail( $post->ID, 'marketing-cropped', array( 'class' => 'img-full' ) );?>
+                      </a>
+                    <?php else: ?>
+                    <img class="img-full" src="<?php echo get_template_directory_uri() . "/images/news.jpg"; ?>" alt="<?php the_title(); ?>">
+                    <?php endif; ?>
+                    <div class="block">
+                      <a class="single-line-heading" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><h3><?php the_title(); ?></h3></a>
+                    </div>
+                      
+                  </article>
+              <?php endforeach; ?>
+              </div>
+              <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+          <?php endif; ?>
+        <?php endif; ?>
       </div>
     </div>
   </div>

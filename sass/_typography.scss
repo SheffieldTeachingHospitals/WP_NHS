@@ -13,3 +13,11 @@ h3.subtle {
     margin: 1em 0;
   
 }
+
+.single-line-heading {
+  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  
+}

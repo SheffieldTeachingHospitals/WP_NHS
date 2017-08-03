@@ -20,6 +20,10 @@ if( have_rows('page_parts') ):
 
         	get_template_part( 'template-parts/page-parts/content', 'featured-image' );
 
+        elseif( get_row_layout() == 'video_block' ): 
+
+        	get_template_part( 'template-parts/page-parts/content', 'video' );
+
         endif;
 
     endwhile;
