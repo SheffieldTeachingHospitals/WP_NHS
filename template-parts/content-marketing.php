@@ -40,6 +40,10 @@ if( have_rows('marketing_parts') ):
 
         	get_template_part( 'template-parts/marketing-parts/content', 'banner-image' );
 
+        elseif( get_row_layout() == 'slider' ): 
+
+        	get_template_part( 'template-parts/marketing-parts/content', 'slider' );
+
         endif;
 
     endwhile;

@@ -301,6 +301,7 @@ remove_action( 'admin_print_styles', 'print_emoji_styles' );
 // Custom Image size
 //
 add_image_size( 'marketing-cropped', 400, 300, true );
+add_image_size( 'marketing-5-3-cropped', 500, 300, true );
 
 
 // Theme options page from ACF
