@@ -18,7 +18,7 @@ if( $is_published ): ?>
 
       <?php $images = get_sub_field('s_images');
       if( $images ): ?>
-        <div id="carousel" class="carousel slide" data-ride="carousel">
+        <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
           
           <!-- Indicators -->
         <ol class="carousel-indicators">
