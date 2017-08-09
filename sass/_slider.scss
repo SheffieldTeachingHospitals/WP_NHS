@@ -1,0 +1,64 @@
+.slider {
+  
+  padding: 0.5em 0 5em 0;
+  
+  @media screen and (max-width: 768px) {
+    
+    padding-bottom: 3em;
+  }
+  
+}
+
+.carousel-indicators {
+  
+  bottom: -3em;
+  
+  li {
+    
+    border: 1px solid #4f5a65;
+    
+  }
+  
+  .active {
+    
+    background-color: #b6babd;
+  }
+  
+  @media screen and (min-width: 768px) {
+    
+    bottom: -3em;
+    
+  }
+  
+}
+
+.carousel-control {
+  
+  
+  
+  .right {
+    
+    background: none;
+  }
+  
+  .left {
+    
+    background: none;
+    
+  }
+}
+
+.carousel-caption {
+  
+  position: static;
+  padding: 1em 0.5em;
+  background-color: $brand-grey;
+  
+  
+  h3 {
+    
+    margin: 5px 0;
+    font-size: 22px;
+    
+  }
+}
