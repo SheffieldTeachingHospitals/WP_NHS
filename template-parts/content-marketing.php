@@ -44,6 +44,10 @@ if( have_rows('marketing_parts') ):
 
         	get_template_part( 'template-parts/marketing-parts/content', 'slider' );
 
+        elseif( get_row_layout() == 'featurette' ): 
+
+        	get_template_part( 'template-parts/marketing-parts/content', 'featurette' );
+
         endif;
 
     endwhile;

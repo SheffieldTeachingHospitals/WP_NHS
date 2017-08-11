@@ -31,9 +31,9 @@ if( $is_published ): ?>
                                                         'orderby'    => 'date',
                                                         'order'      => 'DESC',
                                                         ) );
-              if ( $cfc_cat_feed->have_posts() ) : ?>
-        <?php while ( $cfc_cat_feed->have_posts() ) : $cfc_cat_feed->the_post(); ?>
+      if ( $cfc_cat_feed->have_posts() ) : ?>
       
+      <?php while ( $cfc_cat_feed->have_posts() ) : $cfc_cat_feed->the_post(); ?>
       
       <div class="col-md-4" id="cat-card-<?php echo $cfc_count ;?>">
           <?php if ( has_post_thumbnail() ) :?>
@@ -52,9 +52,10 @@ if( $is_published ): ?>
       </div>
       <?php $cfc_count++ ;?>
       <?php if ($cfc_count == 3) echo "<div class='col-md-12'></div>" ;?>
-        <?php endwhile; ?>
-        <?php wp_reset_postdata(); ?>
-        <?php endif;?>
+      
+      <?php endwhile; ?>
+      <?php wp_reset_postdata(); ?>
+      <?php endif;?>
       <?php endif;?>
       
     </div>

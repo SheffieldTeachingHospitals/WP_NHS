@@ -1,4 +1,4 @@
-section.gray {
+section.gray, .section-grey {
   
   background-color: $brand-gray;
   
@@ -70,6 +70,7 @@ section.gray {
     
     color: $brand-primary;
     text-align: center;
+    font-size: 30px;
     
   }
   
@@ -99,7 +100,7 @@ section.gray {
     
     p, ul, ol {
       
-      font-size: 24px;
+      font-size: 20px;
       
     }
     
