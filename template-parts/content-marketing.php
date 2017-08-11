@@ -48,6 +48,10 @@ if( have_rows('marketing_parts') ):
 
         	get_template_part( 'template-parts/marketing-parts/content', 'featurette' );
 
+        elseif( get_row_layout() == 'four_card_row' ): 
+
+        	get_template_part( 'template-parts/marketing-parts/content', 'four-card-row' );
+
         endif;
 
     endwhile;

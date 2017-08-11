@@ -1,7 +1,7 @@
 h2.subtle {
   
     font-size: 25px;
-    color: #8b8c8c;
+    color: $brand-subtle;
     margin: 1em 0;
   
 }
@@ -9,8 +9,16 @@ h2.subtle {
 h3.subtle {
   
     font-size: 20px;
-    color: #8b8c8c;
+    color: $brand-subtle ;
     margin: 1em 0;
+  
+}
+
+h4.subtle {
+  
+  font-size: 18px;
+  color: $brand-subtle;
+  margin: 1em 0;
   
 }
 
@@ -20,4 +28,9 @@ h3.subtle {
   text-overflow: ellipsis;
   white-space: nowrap;
   
+}
+
+blockquote footer, blockquote small, blockquote .small {
+  
+  color: $brand-grey-dark;
 }

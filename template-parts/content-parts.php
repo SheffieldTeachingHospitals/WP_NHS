@@ -24,6 +24,10 @@ if( have_rows('page_parts') ):
 
         	get_template_part( 'template-parts/page-parts/content', 'video' );
 
+        elseif( get_row_layout() == 'two_column_block' ): 
+
+        	get_template_part( 'template-parts/page-parts/content', 'two-col' );
+
         endif;
 
     endwhile;

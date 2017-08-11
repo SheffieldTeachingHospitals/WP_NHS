@@ -45,7 +45,9 @@ get_header(); ?>
                         <?php echo get_the_post_thumbnail( $post->ID, 'marketing-cropped', array( 'class' => 'img-full' ) );?>
                       </a>
                     <?php else: ?>
-                    <img class="img-full" src="<?php echo get_template_directory_uri() . "/images/news.jpg"; ?>" alt="<?php the_title(); ?>">
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">  
+                      <img class="img-full" src="<?php echo get_template_directory_uri() . "/images/news.jpg"; ?>" alt="<?php the_title(); ?>">
+                    </a>
                     <?php endif; ?>
                     <div class="block">
                       <a class="single-line-heading" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><h3><?php the_title(); ?></h3></a>
