@@ -62,3 +62,32 @@
     
   }
 }
+
+.slider-inner {
+  
+  p {
+    
+    font-size: 20px;
+  }
+}
+
+h1.title-slider {
+  
+  font-size: 50px;
+  margin-top: 0;
+  
+  @media screen and (max-width: 768px) {
+    
+    margin-top: 0.5em;
+  }
+}
+
+h2.title-slider {
+  
+  margin-top: 0;
+  
+  @media screen and (max-width: 768px) {
+    
+    margin-top: 0.5em;
+  }
+}

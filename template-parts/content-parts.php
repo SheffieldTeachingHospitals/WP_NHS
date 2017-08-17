@@ -28,6 +28,10 @@ if( have_rows('page_parts') ):
 
         	get_template_part( 'template-parts/page-parts/content', 'two-col' );
 
+        elseif( get_row_layout() == 'newsletter' ): 
+
+        	get_template_part( 'template-parts/page-parts/content', 'newsletter' );
+
         endif;
 
     endwhile;

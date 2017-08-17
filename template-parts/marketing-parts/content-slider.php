@@ -66,14 +66,15 @@ if( $is_published ): ?>
       </div>
       
       <div class="col-md-4">
-        
-        <?php if( get_sub_field('s_heading_h1') ): ?>
-          <h1><?php the_sub_field('s_heading'); ?></h1>
-        <?php else: ?>
-          <h2><?php the_sub_field('s_heading'); ?></h2>
-        <?php endif; ?>
-        
-        <?php the_sub_field( 's_text' );?>
+        <section class="slider-inner">
+          <?php if( get_sub_field('s_heading_h1') ): ?>
+            <h1 class="title-slider"><?php the_sub_field('s_heading'); ?></h1>
+          <?php else: ?>
+            <h2 class="title-slider"><?php the_sub_field('s_heading'); ?></h2>
+          <?php endif; ?>
+
+          <?php the_sub_field( 's_text' );?>
+        </section>
       </div>
     </div>
   </div>
