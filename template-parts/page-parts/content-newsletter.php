@@ -16,13 +16,16 @@ if( $is_published ): ?>
   <h2 class="subtle"><?php the_sub_field( 'n_section_title' );?></h2>
   <?php endif ;?>
   
+  <?php $n_file = get_sub_field( 'n_featured' ) ;?>
+  
   <div class="row">
     <div class="col-md-6 col-xs-12">
-      <?php echo wp_get_attachment_image( get_sub_field( 'n_image' ), 'full', "", array( "class" => "img-full img-spacer" ) ) ;?>
+      <a href="<?php echo $n_file[ 'url' ] ;?>" target="_blank" title="<?php echo $n_file[ 'title' ] ;?>">
+        <?php echo wp_get_attachment_image( get_sub_field( 'n_image' ), 'full', "", array( "class" => "img-full img-spacer" ) ) ;?>
+      </a>
     </div>
     
     <div class="col-md-6 col-xs-12">
-      <?php $n_file = get_sub_field( 'n_featured' ) ;?>
       <div class="block">
         <h3>
           <a href="<?php echo $n_file[ 'url' ] ;?>" target="_blank" title="<?php echo $n_file[ 'title' ] ;?>"><?php echo $n_file[ 'title' ] ;?></a>

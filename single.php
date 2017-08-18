@@ -7,26 +7,16 @@
 
 get_header(); ?>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-          <header>
-            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-          </header>
-      </div>
-      
-      <div class="col-md-12">
-         <?php sth_breadcrumbs(); ?>
-      </div>
-    </div>
-  </div>
-
 	<div id="primary" class="container">
     
     <div class="row">
       <main id="main" class="col-md-7 col-sm-8" role="main">
 
         <?php while ( have_posts() ) : the_post(); ?>
+        
+          <header>
+            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+          </header>
 
           <?php get_template_part( 'template-parts/content', 'single' ); ?>
           <?php get_template_part( 'template-parts/content', 'nav' ); ?>
