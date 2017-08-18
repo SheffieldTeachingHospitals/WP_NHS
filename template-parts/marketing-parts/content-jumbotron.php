@@ -28,9 +28,9 @@ if( $is_published ): ?>
     <div class="col-md-12">
       <div class="jumbotron"> 
         <?php if( get_sub_field('j_heading_h1') ): ?>
-          <h1><?php the_sub_field('j_heading'); ?></h1>
+          <h1 <?php if( get_sub_field('j_text_white') ): ?>style="color: white;"<?php endif; ?>><?php the_sub_field('j_heading'); ?></h1>
         <?php else: ?>
-          <h2><?php the_sub_field('j_heading'); ?></h2>
+          <h2 <?php if( get_sub_field('j_text_white') ): ?>style="color: white;"<?php endif; ?>><?php the_sub_field('j_heading'); ?></h2>
         <?php endif; ?>
         
         <?php if( get_sub_field('j_body') ): ?>

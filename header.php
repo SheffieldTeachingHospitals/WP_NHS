@@ -59,9 +59,9 @@
               <?php 
               $left_theme_logo = get_field('left_logo', 'option');
               if( !empty($left_theme_logo) ): ?>
-
+              <a title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>">
                 <img class="img-logo img-responsive" title="<?php echo $left_theme_logo['title']; ?>" src="<?php echo $left_theme_logo['url']; ?>" alt="<?php echo $left_theme_logo['alt']; ?>" />
-
+              </a>
               <?php endif; ?>
               
             </div>

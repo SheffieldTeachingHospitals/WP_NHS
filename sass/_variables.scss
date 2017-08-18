@@ -145,7 +145,7 @@ $btn-font-weight:                normal;
 
 $btn-default-color:              $text-color;
 $btn-default-bg:                 #fff;
-$btn-default-border:             #eee;
+$btn-default-border:             $gray-light;
 
 $btn-primary-color:              #fff;
 $btn-primary-bg:                 $brand-primary;
@@ -182,7 +182,7 @@ $input-bg-disabled:              transparent;
 //** Text color for `<input>`s
 $input-color:                    $gray;
 //** `<input>` border color
-$input-border:                   transparent;
+$input-border:                   $gray-light;
 
 // TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
 //** Default `.form-control` border radius

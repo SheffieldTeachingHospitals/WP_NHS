@@ -69,9 +69,9 @@ section.gray, .section-grey {
   h2 {
     
     color: $brand-primary;
-    text-align: center;
+    text-align: left;
     font-size: 30px;
-    
+    margin-bottom: 5px;
   }
   
   hr {
@@ -79,6 +79,7 @@ section.gray, .section-grey {
     border-top: none;
     border-bottom: 5px solid;
     color: $brand-primary;
+    margin: 15px 0;
     
   }
   
