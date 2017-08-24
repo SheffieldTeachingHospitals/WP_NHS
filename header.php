@@ -78,7 +78,7 @@
         </div>
       </div>
 				
-			<nav class="navbar navbar-inverse affix-top" data-spy="affix" data-offset-top="50" data-offset-bottom="0">
+			<nav class="navbar navbar-inverse">
 				<div class="container">
           <div class="row">
             <div class="navbar-header">
